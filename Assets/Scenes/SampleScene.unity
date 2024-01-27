@@ -16419,11 +16419,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 386094780642558187, guid: 232d22d32f828754196c36bbf07778cb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.74
+      value: -1.9
       objectReference: {fileID: 0}
     - target: {fileID: 386094780642558187, guid: 232d22d32f828754196c36bbf07778cb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.84
+      value: 4.74
       objectReference: {fileID: 0}
     - target: {fileID: 386094780642558187, guid: 232d22d32f828754196c36bbf07778cb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16459,7 +16459,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1421094350790589826, guid: 232d22d32f828754196c36bbf07778cb, type: 3}
       propertyPath: runspeed
-      value: 3
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1421094350790589826, guid: 232d22d32f828754196c36bbf07778cb, type: 3}
+      propertyPath: jumpspeed
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2450053134329787519, guid: 232d22d32f828754196c36bbf07778cb, type: 3}
       propertyPath: m_Actions
@@ -16472,6 +16476,10 @@ PrefabInstance:
     - target: {fileID: 4826029557713523647, guid: 232d22d32f828754196c36bbf07778cb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8143838086484277641, guid: 232d22d32f828754196c36bbf07778cb, type: 3}
+      propertyPath: m_GravityScale
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

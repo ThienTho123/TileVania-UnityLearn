@@ -8,7 +8,8 @@ using System.Collections.Generic;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] float runspeed = 5f;
+    [SerializeField] float runSpeed = 5f;
+    [SerializeField] float jumpSpeed =5f;
     Vector2 moveInput;
     Rigidbody2D myrigidbody;
 
@@ -17,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     {
         myrigidbody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
+       
     }
 
     void Update()
@@ -31,9 +33,16 @@ public class PlayerMovement : MonoBehaviour
         moveInput = value.Get<Vector2>();
     }
     
+    void OnJump(InputValue value)
+    {
+        if(value.isPressed)
+        {
+            myrigidbody.velocity += new Vector2(0f,jumpSpeed);
+        }
+    }
     void Run()
     {
-        Vector2 PlayerVelocity = new Vector2(moveInput.x*runspeed, myrigidbody.velocity.y);
+        Vector2 PlayerVelocity = new Vector2(moveInput.x*runSpeed, myrigidbody.velocity.y);
         myrigidbody.velocity=PlayerVelocity;
         
         bool playerHorizontalSpeed = Mathf.Abs(myrigidbody.velocity.x)>Mathf.Epsilon;
@@ -47,10 +56,7 @@ public class PlayerMovement : MonoBehaviour
             {
             transform.localScale = new Vector2 (Mathf.Sign(myrigidbody.velocity.x),1f);
             }
-            if(myAnimator)
-            {
-
-            }        
+               
 
         }
 }   
