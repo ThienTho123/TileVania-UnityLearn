@@ -1,22 +1,21 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-using System.Collections;
-using System.Collections.Generic;
 
 
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] float runSpeed = 5f;
     [SerializeField] float jumpSpeed =5f;
+    [SerializeField] float climbSpeed = 5f;
     Vector2 moveInput;
     Rigidbody2D myrigidbody;
-
-    CapsuleCollider2D myCapsualecollider2D;
-
-
     Animator myAnimator;
+    CapsuleCollider2D myCapsualecollider2D;
     void Start()
     {
         myrigidbody = GetComponent<Rigidbody2D>();
@@ -29,18 +28,16 @@ public class PlayerMovement : MonoBehaviour
     {
         Run();
         FlipSprite();
-
+        ClimbLadder();
     }
     
     void OnMove(InputValue value)
     {
-        moveInput = value.Get<Vector2>();
+        moveInput=value.Get<Vector2>();
     }
-    
     void OnJump(InputValue value)
     {
         if(!myCapsualecollider2D.IsTouchingLayers(LayerMask.GetMask("Ground"))) {return;}
-        
 
         if(value.isPressed)
         {
@@ -66,5 +63,14 @@ public class PlayerMovement : MonoBehaviour
                
 
         }
+    void ClimbLadder()
+
+        {
+            if(!myCapsualecollider2D.IsTouchingLayers(LayerMask.GetMask("Climbing"))) {return;}
+
+            Vector2 climbVelocity = new Vector2(myrigidbody.velocity.x, moveInput.y * climbSpeed);
+            myrigidbody.velocity = climbVelocity;
+        }
+
 }   
 
