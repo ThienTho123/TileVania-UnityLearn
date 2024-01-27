@@ -6,14 +6,15 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     Vector2 moveInput;
+    Rigidbody2D myrigidbody;
     void Start()
     {
-        
+        myrigidbody = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
-        
+        Run();
     }
     
     void OnMove(InputValue value)
@@ -21,4 +22,10 @@ public class PlayerMovement : MonoBehaviour
         moveInput = value.Get<Vector2>();
         Debug.Log(moveInput);
     }
-}
+    
+    void Run()
+    {
+        myrigidbody.velocity=moveInput;
+    }
+}   
+
