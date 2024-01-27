@@ -1,3 +1,7 @@
+using System;
+using UnityEngine;
+using UnityEngine.InputSystem;
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         Run();
+        FlipSprite();
     }
     
     void OnMove(InputValue value)
@@ -27,6 +32,17 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector2 PlayerVelocity = new Vector2(moveInput.x*runspeed, myrigidbody.velocity.y);
         myrigidbody.velocity=PlayerVelocity;
+        
+
     }
+    void FlipSprite()
+        {
+            bool playerHorizontalSpeed = Mathf.Abs(myrigidbody.velocity.x)>Mathf.Epsilon;
+            if(playerHorizontalSpeed)
+            {
+            transform.localScale = new Vector2 (Mathf.Sign(myrigidbody.velocity.x),1f);
+            }        
+
+        }
 }   
 
