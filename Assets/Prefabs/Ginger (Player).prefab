@@ -216,10 +216,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6c0486c1c433634eaa916e3b670ff96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runSpeed: 7
-  jumpSpeed: 15
+  runSpeed: 6
+  jumpSpeed: 10
   climbSpeed: 5
   deathKick: {x: 10, y: 10}
+  bullet: {fileID: 1484606600598101372, guid: 2730256019eb36f4490f350a3cab589a, type: 3}
+  gun: {fileID: 4459615881779052962}
 --- !u!61 &3232997821005406388
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -249,7 +251,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.043912888, y: -0.45499682}
@@ -290,7 +292,7 @@ Transform:
   m_GameObject: {fileID: 6899870478092934231}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.265, y: -0.014, z: 0}
+  m_LocalPosition: {x: 0.379, y: -0.043, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
