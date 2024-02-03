@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameSession : MonoBehaviour
 {
-    [SerializeField] float playerLife = 3f;
+    [SerializeField] int playerLife = 3;
     void Awake()
     {
         int numGameSession = FindObjectsOfType<GameSession>().Length;
@@ -43,5 +43,6 @@ public class GameSession : MonoBehaviour
     void ResetSession()
    {
         SceneManager.LoadScene(0);
+        Destroy(gameObject);
    }
 }
