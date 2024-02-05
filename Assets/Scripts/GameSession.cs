@@ -24,11 +24,11 @@ public class GameSession : MonoBehaviour
    {
         if(playerLife > 1)
         {
-            TakeLife();
+            Invoke(nameof(TakeLife),1);
         }
         else 
         {
-            ResetSession();
+            Invoke(nameof(ResetSession),1);
         }
 
    }

@@ -21103,6 +21103,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 2.6435146
       objectReference: {fileID: 0}
+    - target: {fileID: 2740552822209931263, guid: 1178122767a5d8b4a9b43e0e95d326a5, type: 3}
+      propertyPath: orthographic size
+      value: 3.9
+      objectReference: {fileID: 0}
     - target: {fileID: 2848148620447160485, guid: 1178122767a5d8b4a9b43e0e95d326a5, type: 3}
       propertyPath: m_BoundingShape2D
       value: 
@@ -21187,14 +21191,6 @@ PrefabInstance:
     - target: {fileID: 386094780642558187, guid: 232d22d32f828754196c36bbf07778cb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4459615881779052962, guid: 232d22d32f828754196c36bbf07778cb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.525
-      objectReference: {fileID: 0}
-    - target: {fileID: 4459615881779052962, guid: 232d22d32f828754196c36bbf07778cb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.103
       objectReference: {fileID: 0}
     - target: {fileID: 4826029557713523647, guid: 232d22d32f828754196c36bbf07778cb, type: 3}
       propertyPath: m_Name
