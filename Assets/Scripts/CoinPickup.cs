@@ -9,7 +9,7 @@ public class CoinPickup : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            AudioSource.PlayClipAtPoint(coinPickupSFX,Camera.main.transform.position);
+            AudioSource.PlayClipAtPoint(coinPickupSFX, Camera.main.transform.position);
             Destroy(gameObject);
         }
     }
