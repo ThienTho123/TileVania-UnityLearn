@@ -1,37 +1,50 @@
 # TileVania
 
-TileVania là một trò chơi platformer được lấy cảm hứng từ loạt game Mario, được phát triển bằng Unity và sử dụng ngôn ngữ lập trình C#.
+🎮 *TileVania* is a platformer game inspired by the Mario series, developed using **Unity** and programmed in *C#*.
 
-## Hướng dẫn cài đặt và chạy
+## Installation and Running Guide
 
-(Nếu bạn chỉ muốn trải nghiệm game thì chỉ cần thực hiện bước 2 là được)
+(If you just want to experience the game, you only need to follow step 2)
 
-1. **Cài đặt Unity:** Đảm bảo rằng bạn đã cài đặt Unity trên máy tính của mình. Bạn có thể tải Unity từ trang web chính thức của họ.
+1. **Install Unity:** Make sure you have Unity installed on your computer. You can download Unity from [their official website](https://unity.com/).
 
-2. **Clone Repository:** Clone repository này về máy tính của bạn bằng cách sử dụng Git hoặc tải mã nguồn dưới dạng ZIP và giải nén. Mở game bằng cách vào thư mục Build và chạy file TileVania.exe
+2. **Clone Repository:** Clone this repository to your computer using Git or download the source code as a ZIP file and extract it. Open the game by navigating to the Build folder and running the `TileVania.exe` file.
 
-3. **Mở Dự án trong Unity:** Mở Unity Hub và chọn "Add" để thêm dự án TileVania vào danh sách dự án của bạn. Sau đó, chọn thư mục mà bạn đã clone repository vào.
+3. **Open Project in Unity:** Open *Unity Hub* and select "Add" to add the *TileVania* project to your project list. Then, select the folder where you cloned the repository.
 
-4. **Mở Dự án:** Sau khi dự án đã được thêm vào Unity Hub, nhấp vào nó để mở.
+4. **Open Project:** After the project has been added to *Unity Hub*, click on it to open.
 
-5. **Chạy Trò chơi:** Tìm và mở "MainScene" trong thư mục Scenes, sau đó nhấn nút "Play" để chạy trò chơi trong trình giả lập Unity.
+5. **Run the Game:** Find and open "MainScene" in the *Scenes* folder, then press the "Play" button to run the game in the Unity emulator.
 
-## Hướng dẫn chơi
+## Gameplay Guide
 
-- Sử dụng phím A và D để di chuyển nhân vật sang trái, sang phải.
-- Nhảy bằng cách nhấn phím cách.
-- Thu thập tiền xu để ghi điểm.
-- Tránh va chạm với kẻ thù hoặc các chướng ngại vật.
+- Use the **A** and **D** keys to move the character left and right.
+- Jump by pressing the **Space** key.
+- Players can attack enemies by clicking the left mouse button.
+- Collect coins to score points.
+- Avoid colliding with enemies or obstacles.
 
-## Tính năng
+## Features
 
-- Môi trường game được tạo ra từ các "tile" để tạo cảm giác thế giới 2D.
-- Các mức độ được thiết kế thủ công với sự phức tạp gia tăng từ dễ đến khó.
-- Hệ thống ghi điểm để theo dõi thành tích của người chơi.
+- The game environment is created using "tiles" to create a 2D world feel.
+- Levels are handcrafted with increasing complexity from easy to difficult.
+- Score system to track player achievements.
 
-## Hỗ trợ và Đóng góp
+## Demo Images
 
-Nếu bạn gặp vấn đề khi chạy hoặc chơi game, hãy tạo một issue trên GitHub hoặc liên hệ qua email: [thientho7a4@gmail.com](mailto:your.email@example.com). Tôi rất hoan nghênh mọi ý kiến đóng góp và sự phản hồi từ cộng đồng.
+Here are some demo images of the game:
 
-Nếu bạn muốn đóng góp vào mã nguồn của TileVania, hãy gửi một pull request. Tôi sẽ rất vui lòng xem xét và tích hợp các cải tiến từ cộng đồng.
+<div style="display: flex; justify-content: space-between;">
+  <img src="https://github.com/ThienTho123/TileVania-UnityLearn/blob/main/Demo/Demo0.png" alt="Demo 1" width="400"/>
+  <img src="https://github.com/ThienTho123/TileVania-UnityLearn/blob/main/Demo/Demo1.png" alt="Demo 2" width="400"/>
+</div>
 
+## Support and Contribution
+
+If you encounter any issues while running or playing the game, please create an issue on GitHub or contact us via email: 📧 [thientho7a4@gmail.com](mailto:thientho7a4@gmail.com). We welcome any feedback and contributions from the community.
+
+If you'd like to contribute to the source code of *TileVania*, please submit a pull request. We'll be happy to review and integrate improvements from the community.
+
+**Note:** This is a demo product created during my game development learning process, so there may still be some issues. For example, enemies may occasionally move off-screen, tile blocks may not be fully designed, and the water platform system is still under development. I'm committed to addressing all issues and completing the game in the future.
+
+👨‍💻 **Developer:** [Huỳnh Thiện Thọ](https://github.com/ThienTho123)
